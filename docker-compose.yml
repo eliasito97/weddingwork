@@ -1,0 +1,16 @@
+version: '3.3'
+
+services:
+  app:
+    container_name: ww_app
+    build: .
+    restart: always
+    environment:
+      DB_DATABASE: wedding_work
+      DB_USERNAME: superuser
+      DB_PASSWORD: SE0ptCs58Zap
+      DB_HOST: 192.168.0.102
+      DB_PORT: 5006
+      APP_ENV: local
+volumes:
+  db_data: {}
